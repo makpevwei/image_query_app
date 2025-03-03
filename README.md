@@ -31,7 +31,7 @@ Built using **Python, Streamlit, and Google Gemini AI** to generate intelligent 
 ---
 
 ## 🎮 Live Demo  
-🔗 Try it out here: [https://image-query.streamlit.app](https://your-streamlit-app.streamlit.app)  
+🔗 Try it out here: [https://image-query.streamlit.app](https://image-query.streamlit.app/)  
 
 ---
 
