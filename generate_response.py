@@ -2,6 +2,11 @@ import os
 from google import genai
 from google.genai import types
 import tempfile
+from dotenv import load_dotenv
+
+load_dotenv()
+
+api_key = os.environ["GEMINI_API_KEY"]
 
 def generate_response(image_bytes, prompt):
     """
@@ -15,7 +20,7 @@ def generate_response(image_bytes, prompt):
         str: The response from the Gemini model.
     """
     client = genai.Client(
-        api_key=os.environ.get("GEMINI_API_KEY"),
+        api_key=os.environ.get("GEMINI_API_KEY", api_key),
     )
 
     # Create a temporary file to store the image bytes
