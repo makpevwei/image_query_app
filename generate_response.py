@@ -15,7 +15,7 @@ def generate_response(image_bytes, prompt):
         str: The response from the Gemini model.
     """
     client = genai.Client(
-        api_key=os.environ.get("GEMINI_API_KEY"),
+        api_key=os.environ.get("GOOGLE_API_KEY"),
     )
 
     # Create a temporary file to store the image bytes
