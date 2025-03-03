@@ -42,4 +42,4 @@ To run this app locally:
 git clone https://github.com/makpevwei/image_query_app
 cd image-query-app
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run streamlit_image_query.py
